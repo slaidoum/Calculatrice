@@ -1,0 +1,240 @@
+\hypertarget{classCalculatrice}{\section{\-Calculatrice \-Class \-Reference}
+\label{classCalculatrice}\index{\-Calculatrice@{\-Calculatrice}}
+}
+
+
+\-Classe permettant de créer les différentes types de constantes et de traiter les opérations.  
+
+
+
+
+{\ttfamily \#include $<$\-Calculatrice.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCalculatrice_a4ed7c7c9b349d7c469d0622a43c28969}{fabriquer} (const \-Q\-String \&text, enum\-Type type) const 
+\begin{DoxyCompactList}\small\item\em \-Fabrique une constante et l'empile ou dans le cas d'un opérateur, on le traite. \end{DoxyCompactList}\item 
+bool \hyperlink{classCalculatrice_a6e5a1fbf232590f4f62cfc74625037cd}{is\-Operateur} (const \-Q\-String \&s) const 
+\begin{DoxyCompactList}\small\item\em \-Détermine si une chaine de caractères est un opérateur. \end{DoxyCompactList}\item 
+bool \hyperlink{classCalculatrice_a890ae3d00b6eb9d244487c5845ab99e1}{is\-Constante} (const \-Q\-String \&s) const 
+\begin{DoxyCompactList}\small\item\em \-Détermine si une chaine de caractères est une constante. \end{DoxyCompactList}\item 
+bool \hyperlink{classCalculatrice_aefc17b819882371bf7bf4598e95eacd7}{is\-Entier} (const \-Q\-String \&s) const 
+\begin{DoxyCompactList}\small\item\em \-Détermine si une chaine de caractères est un entier. \end{DoxyCompactList}\item 
+bool \hyperlink{classCalculatrice_a4f7cf40bbf5c34b57f6e5425ce6a3474}{is\-Reel} (const \-Q\-String \&s) const 
+\begin{DoxyCompactList}\small\item\em \-Détermine si une chaine de caractères est un réel. \end{DoxyCompactList}\item 
+bool \hyperlink{classCalculatrice_a819763881ef5f56d7f3d43e76040b2d2}{is\-Rationnel} (const \-Q\-String \&s) const 
+\begin{DoxyCompactList}\small\item\em \-Détermine si une chaine de caractères est un rationnel. \end{DoxyCompactList}\item 
+bool \hyperlink{classCalculatrice_ae54ad074ece7af59c66c0ade18477c98}{is\-Complexe} (const \-Q\-String \&s) const 
+\begin{DoxyCompactList}\small\item\em \-Détermine si une chaine de caractères est un complexe. \end{DoxyCompactList}\item 
+bool \hyperlink{classCalculatrice_ae8e493fdbe9f85ecb9157abf0d2d0c35}{is\-Operateur\-Binaire} (const \-Q\-String \&s) const 
+\begin{DoxyCompactList}\small\item\em \-Détermine si une chaine de caractères est un opérateur binaire. \end{DoxyCompactList}\item 
+bool \hyperlink{classCalculatrice_a7a31fa3cb1e95ea24d37affe1492486e}{is\-Operateur\-Unaire} (const \-Q\-String \&s) const 
+\begin{DoxyCompactList}\small\item\em \-Détermine si une chaine de caractères est un opérateur unaire. \end{DoxyCompactList}\item 
+bool \hyperlink{classCalculatrice_abc8e063f53b0d0a14da786fbcb604f29}{is\-Operateur\-Sans\-Arg} (const \-Q\-String \&s) const 
+\begin{DoxyCompactList}\small\item\em \-Détermine si une chaine de caractères est un opérateur ne nécessitant aucun aucun argument. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classCalculatrice}{\-Calculatrice} \& \hyperlink{classCalculatrice_a6311c8e75ac47e9f43ecd47ebc22c10b}{get\-Instance} ()
+\begin{DoxyCompactList}\small\item\em \-Retourne l'unique instance de cette classe. \end{DoxyCompactList}\item 
+static void \hyperlink{classCalculatrice_aa974f5b58c583ef3aaee055eac238466}{libere\-Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Classe permettant de créer les différentes types de constantes et de traiter les opérations. 
+
+\-Le \-Design \-Pattern \-Singleton est utilisé. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classCalculatrice_a4ed7c7c9b349d7c469d0622a43c28969}{\index{\-Calculatrice@{\-Calculatrice}!fabriquer@{fabriquer}}
+\index{fabriquer@{fabriquer}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{fabriquer}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Calculatrice\-::fabriquer} (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-String \&}]{text, }
+\item[{enum\-Type}]{type}
+\end{DoxyParamCaption}
+) const}}\label{classCalculatrice_a4ed7c7c9b349d7c469d0622a43c28969}
+
+
+\-Fabrique une constante et l'empile ou dans le cas d'un opérateur, on le traite. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em \-La} & constante ou l'opérateur sous la forme d'une chaine de caractères. \\
+\hline
+{\em \-Le} & type qui déterminera le type du futur objet à fabriquer et son traitement.\\
+\hline
+\end{DoxyParams}
+\-Fabrique une constante et l'empile ou dans le cas d'un opérateur, on le traite. \hypertarget{classCalculatrice_a6311c8e75ac47e9f43ecd47ebc22c10b}{\index{\-Calculatrice@{\-Calculatrice}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Calculatrice} \& {\bf \-Calculatrice\-::get\-Instance} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classCalculatrice_a6311c8e75ac47e9f43ecd47ebc22c10b}
+
+
+\-Retourne l'unique instance de cette classe. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Un pointeur vers l'unique instance de cette classe.
+\end{DoxyReturn}
+\-Retourne l'unique instance de cette classe. \hypertarget{classCalculatrice_ae54ad074ece7af59c66c0ade18477c98}{\index{\-Calculatrice@{\-Calculatrice}!is\-Complexe@{is\-Complexe}}
+\index{is\-Complexe@{is\-Complexe}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{is\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Calculatrice\-::is\-Complexe} (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-String \&}]{s}
+\end{DoxyParamCaption}
+) const}}\label{classCalculatrice_ae54ad074ece7af59c66c0ade18477c98}
+
+
+\-Détermine si une chaine de caractères est un complexe. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em \-La} & chaine de caractères à examiner.\\
+\hline
+\end{DoxyParams}
+\-Détermine si une chaine de caractères est un complexe. \hypertarget{classCalculatrice_a890ae3d00b6eb9d244487c5845ab99e1}{\index{\-Calculatrice@{\-Calculatrice}!is\-Constante@{is\-Constante}}
+\index{is\-Constante@{is\-Constante}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{is\-Constante}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Calculatrice\-::is\-Constante} (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-String \&}]{s}
+\end{DoxyParamCaption}
+) const}}\label{classCalculatrice_a890ae3d00b6eb9d244487c5845ab99e1}
+
+
+\-Détermine si une chaine de caractères est une constante. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em \-La} & chaine de caractères à examiner.\\
+\hline
+\end{DoxyParams}
+\-Détermine si une chaine de caractères est une constante. \hypertarget{classCalculatrice_aefc17b819882371bf7bf4598e95eacd7}{\index{\-Calculatrice@{\-Calculatrice}!is\-Entier@{is\-Entier}}
+\index{is\-Entier@{is\-Entier}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{is\-Entier}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Calculatrice\-::is\-Entier} (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-String \&}]{s}
+\end{DoxyParamCaption}
+) const}}\label{classCalculatrice_aefc17b819882371bf7bf4598e95eacd7}
+
+
+\-Détermine si une chaine de caractères est un entier. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em \-La} & chaine de caractères à examiner.\\
+\hline
+\end{DoxyParams}
+\-Détermine si une chaine de caractères est un entier. \hypertarget{classCalculatrice_a6e5a1fbf232590f4f62cfc74625037cd}{\index{\-Calculatrice@{\-Calculatrice}!is\-Operateur@{is\-Operateur}}
+\index{is\-Operateur@{is\-Operateur}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{is\-Operateur}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Calculatrice\-::is\-Operateur} (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-String \&}]{s}
+\end{DoxyParamCaption}
+) const}}\label{classCalculatrice_a6e5a1fbf232590f4f62cfc74625037cd}
+
+
+\-Détermine si une chaine de caractères est un opérateur. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em \-La} & chaine de caractères à examiner.\\
+\hline
+\end{DoxyParams}
+\-Détermine si une chaine de caractères est un opérateur. \hypertarget{classCalculatrice_ae8e493fdbe9f85ecb9157abf0d2d0c35}{\index{\-Calculatrice@{\-Calculatrice}!is\-Operateur\-Binaire@{is\-Operateur\-Binaire}}
+\index{is\-Operateur\-Binaire@{is\-Operateur\-Binaire}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{is\-Operateur\-Binaire}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Calculatrice\-::is\-Operateur\-Binaire} (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-String \&}]{s}
+\end{DoxyParamCaption}
+) const}}\label{classCalculatrice_ae8e493fdbe9f85ecb9157abf0d2d0c35}
+
+
+\-Détermine si une chaine de caractères est un opérateur binaire. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em \-La} & chaine de caractères à examiner.\\
+\hline
+\end{DoxyParams}
+\-Détermine si une chaine de caractères est un opérateur binaire. \hypertarget{classCalculatrice_abc8e063f53b0d0a14da786fbcb604f29}{\index{\-Calculatrice@{\-Calculatrice}!is\-Operateur\-Sans\-Arg@{is\-Operateur\-Sans\-Arg}}
+\index{is\-Operateur\-Sans\-Arg@{is\-Operateur\-Sans\-Arg}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{is\-Operateur\-Sans\-Arg}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Calculatrice\-::is\-Operateur\-Sans\-Arg} (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-String \&}]{s}
+\end{DoxyParamCaption}
+) const}}\label{classCalculatrice_abc8e063f53b0d0a14da786fbcb604f29}
+
+
+\-Détermine si une chaine de caractères est un opérateur ne nécessitant aucun aucun argument. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em \-La} & chaine de caractères à examiner.\\
+\hline
+\end{DoxyParams}
+\-Détermine si une chaine de caractères est un opérateur ne nécessitant aucun aucun argument. \hypertarget{classCalculatrice_a7a31fa3cb1e95ea24d37affe1492486e}{\index{\-Calculatrice@{\-Calculatrice}!is\-Operateur\-Unaire@{is\-Operateur\-Unaire}}
+\index{is\-Operateur\-Unaire@{is\-Operateur\-Unaire}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{is\-Operateur\-Unaire}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Calculatrice\-::is\-Operateur\-Unaire} (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-String \&}]{s}
+\end{DoxyParamCaption}
+) const}}\label{classCalculatrice_a7a31fa3cb1e95ea24d37affe1492486e}
+
+
+\-Détermine si une chaine de caractères est un opérateur unaire. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em \-La} & chaine de caractères à examiner.\\
+\hline
+\end{DoxyParams}
+\-Détermine si une chaine de caractères est un opérateur unaire. \hypertarget{classCalculatrice_a819763881ef5f56d7f3d43e76040b2d2}{\index{\-Calculatrice@{\-Calculatrice}!is\-Rationnel@{is\-Rationnel}}
+\index{is\-Rationnel@{is\-Rationnel}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{is\-Rationnel}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Calculatrice\-::is\-Rationnel} (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-String \&}]{s}
+\end{DoxyParamCaption}
+) const}}\label{classCalculatrice_a819763881ef5f56d7f3d43e76040b2d2}
+
+
+\-Détermine si une chaine de caractères est un rationnel. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em \-La} & chaine de caractères à examiner.\\
+\hline
+\end{DoxyParams}
+\-Détermine si une chaine de caractères est un rationnel. \hypertarget{classCalculatrice_a4f7cf40bbf5c34b57f6e5425ce6a3474}{\index{\-Calculatrice@{\-Calculatrice}!is\-Reel@{is\-Reel}}
+\index{is\-Reel@{is\-Reel}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{is\-Reel}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Calculatrice\-::is\-Reel} (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-String \&}]{s}
+\end{DoxyParamCaption}
+) const}}\label{classCalculatrice_a4f7cf40bbf5c34b57f6e5425ce6a3474}
+
+
+\-Détermine si une chaine de caractères est un réel. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em \-La} & chaine de caractères à examiner.\\
+\hline
+\end{DoxyParams}
+\-Détermine si une chaine de caractères est un réel. \hypertarget{classCalculatrice_aa974f5b58c583ef3aaee055eac238466}{\index{\-Calculatrice@{\-Calculatrice}!libere\-Instance@{libere\-Instance}}
+\index{libere\-Instance@{libere\-Instance}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{libere\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Calculatrice\-::libere\-Instance} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classCalculatrice_aa974f5b58c583ef3aaee055eac238466}
+\-Libère l'unique instance de cette classe. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Calculatrice_8h}{\-Calculatrice.\-h}\item 
+\-Calculatrice.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,246 @@
+\hypertarget{classPile}{\section{\-Pile \-Class \-Reference}
+\label{classPile}\index{\-Pile@{\-Pile}}
+}
+
+
+\-Classe permettant de stocker les différentes constantes et résultats de calculs de l'utilisateur de la calculatrice. \{ hérite de \-Q\-Stack$<$\-Constante$\ast$$>$ \}.  
+
+
+
+
+{\ttfamily \#include $<$\-Pile.\-h$>$}
+
+\subsection*{\-Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classPile_1_1Memento}{\-Memento}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classPile_a1a19ce2a4a6a76286fae8243a1f9e247}{swap} (int x, int y)
+\begin{DoxyCompactList}\small\item\em \-Effectue le swap entre les valeurs de la pile se trouvant aux positions x et y. \end{DoxyCompactList}\item 
+void \hyperlink{classPile_ae09e2cf01c21b58a6c2c4efee101c158}{sum} (int x)
+\begin{DoxyCompactList}\small\item\em \-Effectue la somme des x premiers élements de la pile. \end{DoxyCompactList}\item 
+void \hyperlink{classPile_a1daebba5bd1d6c6d79de63728cc892a9}{mean} (int x)
+\begin{DoxyCompactList}\small\item\em \-Effectue la moyenne des x premiers élements de la pile. \end{DoxyCompactList}\item 
+void \hyperlink{classPile_a3bfd5edd27566980c978b9b9692dcac2}{clear\-Pile} ()
+\item 
+void \hyperlink{classPile_a081f7843d01cae1f0f7be7d92e46d5d2}{dup} ()
+\item 
+void \hyperlink{classPile_a7488ed257c6ceb16ed57a9fffb0726d5}{drop} ()
+\item 
+void \hyperlink{classPile_a70be33baaba88e35a7c7fb4203cd703c}{sauvegarder\-Dans\-Fichier} (int nb\-Elts\-Pile) const 
+\begin{DoxyCompactList}\small\item\em \-Sauvegarde l'état de la pile dans un fichier spécifique. \end{DoxyCompactList}\item 
+int \hyperlink{classPile_a5ec4b766e09cfd2fdf97b7c093609f9d}{charger\-Depuis\-Fichier} ()
+\begin{DoxyCompactList}\small\item\em \-Charge l'état de la pile depuis un fichier spécifique. \end{DoxyCompactList}\item 
+\hyperlink{classPile}{\-Pile} $\ast$ \hyperlink{classPile_ab5dfd21edb0870f3dc9d8ce0eaf63e65}{clone} () const 
+\begin{DoxyCompactList}\small\item\em \-Crée une nouvelle instance de cette classe. \end{DoxyCompactList}\item 
+\hyperlink{classPile}{\-Pile} $\ast$ \hyperlink{classPile_aeef72130e2709198369529abc2a0155e}{get\-Pile} () const 
+\begin{DoxyCompactList}\small\item\em \-Retourne la pile courante. \end{DoxyCompactList}\item 
+\hyperlink{classPile_1_1Memento}{\-Memento} $\ast$ \hyperlink{classPile_a5f6591defa8702b06872735d4043c754}{sauvegarder\-Pile\-Courante} () const 
+\begin{DoxyCompactList}\small\item\em \-Retourne une instance d'objet de type \hyperlink{classPile_1_1Memento}{\-Memento} encapsulant une instance de pile. \end{DoxyCompactList}\item 
+void \hyperlink{classPile_a14b191f65aca9842691235fd8726dd21}{charger\-Une\-Pile} (const \hyperlink{classPile_1_1Memento}{\-Memento} $\ast$m)
+\begin{DoxyCompactList}\small\item\em \-Charge la pile courante par la pile encapsulée dans l'objet de type \hyperlink{classPile_1_1Memento}{\-Memento}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classPile}{\-Pile} \& \hyperlink{classPile_a8a8779a9093f6cd64c6aed57b08e93bd}{get\-Instance} ()
+\begin{DoxyCompactList}\small\item\em \-Retourne l'unique instance de cette classe. \end{DoxyCompactList}\item 
+static void \hyperlink{classPile_ac1c6dc99e7b12586303e980b6c44e686}{libere\-Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Classe permettant de stocker les différentes constantes et résultats de calculs de l'utilisateur de la calculatrice. \{ hérite de \-Q\-Stack$<$\-Constante$\ast$$>$ \}. 
+
+\-Le \-Design \-Pattern \-Singleton est utilisé. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classPile_a5ec4b766e09cfd2fdf97b7c093609f9d}{\index{\-Pile@{\-Pile}!charger\-Depuis\-Fichier@{charger\-Depuis\-Fichier}}
+\index{charger\-Depuis\-Fichier@{charger\-Depuis\-Fichier}!Pile@{\-Pile}}
+\subsubsection[{charger\-Depuis\-Fichier}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Pile\-::charger\-Depuis\-Fichier} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPile_a5ec4b766e09cfd2fdf97b7c093609f9d}
+
+
+\-Charge l'état de la pile depuis un fichier spécifique. 
+
+\begin{DoxyReturn}{\-Returns}
+nb\-Elts\-Pile \-Le nombre d'élements de la pile à afficher.
+\end{DoxyReturn}
+\-Charge l'état de la pile depuis un fichier spécifique. \hypertarget{classPile_a14b191f65aca9842691235fd8726dd21}{\index{\-Pile@{\-Pile}!charger\-Une\-Pile@{charger\-Une\-Pile}}
+\index{charger\-Une\-Pile@{charger\-Une\-Pile}!Pile@{\-Pile}}
+\subsubsection[{charger\-Une\-Pile}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Pile\-::charger\-Une\-Pile} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Memento} $\ast$}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classPile_a14b191f65aca9842691235fd8726dd21}
+
+
+\-Charge la pile courante par la pile encapsulée dans l'objet de type \hyperlink{classPile_1_1Memento}{\-Memento}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em m} & \-Un pointeur vers un objet de type \hyperlink{classPile_1_1Memento}{\-Memento}.\\
+\hline
+\end{DoxyParams}
+\-Charge la pile courante par la pile encapsulée dans l'objet de type \hyperlink{classPile_1_1Memento}{\-Memento} \hypertarget{classPile_a3bfd5edd27566980c978b9b9692dcac2}{\index{\-Pile@{\-Pile}!clear\-Pile@{clear\-Pile}}
+\index{clear\-Pile@{clear\-Pile}!Pile@{\-Pile}}
+\subsubsection[{clear\-Pile}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Pile\-::clear\-Pile} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPile_a3bfd5edd27566980c978b9b9692dcac2}
+\-Vide la pile. \hypertarget{classPile_ab5dfd21edb0870f3dc9d8ce0eaf63e65}{\index{\-Pile@{\-Pile}!clone@{clone}}
+\index{clone@{clone}!Pile@{\-Pile}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Pile} $\ast$ {\bf \-Pile\-::clone} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classPile_ab5dfd21edb0870f3dc9d8ce0eaf63e65}
+
+
+\-Crée une nouvelle instance de cette classe. 
+
+\begin{DoxyReturn}{\-Returns}
+\-La nouvelle instance de cette classe.
+\end{DoxyReturn}
+\-Crée une nouvelle instance de cette classe. \hypertarget{classPile_a7488ed257c6ceb16ed57a9fffb0726d5}{\index{\-Pile@{\-Pile}!drop@{drop}}
+\index{drop@{drop}!Pile@{\-Pile}}
+\subsubsection[{drop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Pile\-::drop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPile_a7488ed257c6ceb16ed57a9fffb0726d5}
+\-Supprime le dernier élement de la pile. \hypertarget{classPile_a081f7843d01cae1f0f7be7d92e46d5d2}{\index{\-Pile@{\-Pile}!dup@{dup}}
+\index{dup@{dup}!Pile@{\-Pile}}
+\subsubsection[{dup}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Pile\-::dup} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPile_a081f7843d01cae1f0f7be7d92e46d5d2}
+\-Duplique le dernier élement de la pile. \hypertarget{classPile_a8a8779a9093f6cd64c6aed57b08e93bd}{\index{\-Pile@{\-Pile}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!Pile@{\-Pile}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Pile} \& {\bf \-Pile\-::get\-Instance} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classPile_a8a8779a9093f6cd64c6aed57b08e93bd}
+
+
+\-Retourne l'unique instance de cette classe. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Un pointeur vers l'unique instance de cette classe.
+\end{DoxyReturn}
+\-Retourne l'unique instance de cette classe. \hypertarget{classPile_aeef72130e2709198369529abc2a0155e}{\index{\-Pile@{\-Pile}!get\-Pile@{get\-Pile}}
+\index{get\-Pile@{get\-Pile}!Pile@{\-Pile}}
+\subsubsection[{get\-Pile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Pile}$\ast$ {\bf \-Pile\-::get\-Pile} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classPile_aeef72130e2709198369529abc2a0155e}
+
+
+\-Retourne la pile courante. 
+
+\begin{DoxyReturn}{\-Returns}
+\-La pile courante.
+\end{DoxyReturn}
+\-Retourne la pile courante. \hypertarget{classPile_ac1c6dc99e7b12586303e980b6c44e686}{\index{\-Pile@{\-Pile}!libere\-Instance@{libere\-Instance}}
+\index{libere\-Instance@{libere\-Instance}!Pile@{\-Pile}}
+\subsubsection[{libere\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Pile\-::libere\-Instance} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classPile_ac1c6dc99e7b12586303e980b6c44e686}
+\-Libère l'unique instance de cette classe. \hypertarget{classPile_a1daebba5bd1d6c6d79de63728cc892a9}{\index{\-Pile@{\-Pile}!mean@{mean}}
+\index{mean@{mean}!Pile@{\-Pile}}
+\subsubsection[{mean}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Pile\-::mean} (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}}\label{classPile_a1daebba5bd1d6c6d79de63728cc892a9}
+
+
+\-Effectue la moyenne des x premiers élements de la pile. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em x} & \hyperlink{classNombre}{\-Nombre} d'élements de la pile pour lesquels il faut faire la moyenne.\\
+\hline
+\end{DoxyParams}
+\-Effectue la moyenne des x premiers élements de la pile. \hypertarget{classPile_a70be33baaba88e35a7c7fb4203cd703c}{\index{\-Pile@{\-Pile}!sauvegarder\-Dans\-Fichier@{sauvegarder\-Dans\-Fichier}}
+\index{sauvegarder\-Dans\-Fichier@{sauvegarder\-Dans\-Fichier}!Pile@{\-Pile}}
+\subsubsection[{sauvegarder\-Dans\-Fichier}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Pile\-::sauvegarder\-Dans\-Fichier} (
+\begin{DoxyParamCaption}
+\item[{int}]{nb\-Elts\-Pile}
+\end{DoxyParamCaption}
+) const}}\label{classPile_a70be33baaba88e35a7c7fb4203cd703c}
+
+
+\-Sauvegarde l'état de la pile dans un fichier spécifique. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em nb\-Elts\-Pile} & \-Le nombre d'élements de la pile à afficher.\\
+\hline
+\end{DoxyParams}
+\-Sauvegarde l'état de la pile dans un fichier spécifique. \hypertarget{classPile_a5f6591defa8702b06872735d4043c754}{\index{\-Pile@{\-Pile}!sauvegarder\-Pile\-Courante@{sauvegarder\-Pile\-Courante}}
+\index{sauvegarder\-Pile\-Courante@{sauvegarder\-Pile\-Courante}!Pile@{\-Pile}}
+\subsubsection[{sauvegarder\-Pile\-Courante}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Memento}$\ast$ {\bf \-Pile\-::sauvegarder\-Pile\-Courante} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classPile_a5f6591defa8702b06872735d4043c754}
+
+
+\-Retourne une instance d'objet de type \hyperlink{classPile_1_1Memento}{\-Memento} encapsulant une instance de pile. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Un pointeur vers un objet de type \hyperlink{classPile_1_1Memento}{\-Memento}.
+\end{DoxyReturn}
+\-Retourne une instance d'objet de type \hyperlink{classPile_1_1Memento}{\-Memento} encapsulant une instance de pile. \hypertarget{classPile_ae09e2cf01c21b58a6c2c4efee101c158}{\index{\-Pile@{\-Pile}!sum@{sum}}
+\index{sum@{sum}!Pile@{\-Pile}}
+\subsubsection[{sum}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Pile\-::sum} (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}}\label{classPile_ae09e2cf01c21b58a6c2c4efee101c158}
+
+
+\-Effectue la somme des x premiers élements de la pile. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em x} & \hyperlink{classNombre}{\-Nombre} d'élements de la pile à sommer.\\
+\hline
+\end{DoxyParams}
+\-Effectue la somme des x premiers élements de la pile. \hypertarget{classPile_a1a19ce2a4a6a76286fae8243a1f9e247}{\index{\-Pile@{\-Pile}!swap@{swap}}
+\index{swap@{swap}!Pile@{\-Pile}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Pile\-::swap} (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{classPile_a1a19ce2a4a6a76286fae8243a1f9e247}
+
+
+\-Effectue le swap entre les valeurs de la pile se trouvant aux positions x et y. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em x} & \-Premier indice à swaper \\
+\hline
+{\em y} & \-Second indice à swaper\\
+\hline
+\end{DoxyParams}
+\-Effectue le swap entre les valeurs de la pile se trouvant aux positions x et y. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Pile_8h}{\-Pile.\-h}\item 
+\-Pile.\-cpp\end{DoxyCompactItemize}

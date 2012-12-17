@@ -1,0 +1,116 @@
+\hypertarget{classBackUpPiles}{\section{\-Back\-Up\-Piles \-Class \-Reference}
+\label{classBackUpPiles}\index{\-Back\-Up\-Piles@{\-Back\-Up\-Piles}}
+}
+
+
+\-Classe permettant de garder en mémoire une liste des piles (pointeurs vers des objets de type \-Memento) ce qui permet donc de réaliser le \-Undo et le \-Redo de la pile.  
+
+
+
+
+{\ttfamily \#include $<$\-Back\-Up\-Piles.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classBackUpPiles_a82adf7d399044e2bf5de8861d8a7326e}{ajouter\-Nouvelle\-Pile} (\hyperlink{classPile_1_1Memento}{\-Pile\-::\-Memento} $\ast$pile)
+\begin{DoxyCompactList}\small\item\em \-Ajoute une nouvelle instance de pile dans la liste des piles. \end{DoxyCompactList}\item 
+const \hyperlink{classPile_1_1Memento}{\-Pile\-::\-Memento} $\ast$ \hyperlink{classBackUpPiles_a6712c6c4a51446c1299585c7078fe3da}{get\-Derniere\-Pile} () const 
+\begin{DoxyCompactList}\small\item\em \-Retourne la pile précédente, celle se trouvant à l'index m\-Index\-Liste. \{ \-U\-N\-D\-O \}. \end{DoxyCompactList}\item 
+const \hyperlink{classPile_1_1Memento}{\-Pile\-::\-Memento} $\ast$ \hyperlink{classBackUpPiles_ab46243afaf7baf460bcd1eec2ec15a3b}{get\-Pile\-Suivante} () const 
+\begin{DoxyCompactList}\small\item\em \-Retourne la pile suivante, celle se trouvant à l'index m\-Index\-Liste. \{ \-R\-E\-D\-O \}. \end{DoxyCompactList}\item 
+void \hyperlink{classBackUpPiles_a919f7dfc07a81980442ccfc109c9cbf2}{clear\-Back\-Up\-Piles} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classBackUpPiles}{\-Back\-Up\-Piles} $\ast$ \hyperlink{classBackUpPiles_a7358321a5930e0ab44a24c967218acc9}{get\-Instance} ()
+\begin{DoxyCompactList}\small\item\em \-Retourne l'unique instance de cette classe. \end{DoxyCompactList}\item 
+static void \hyperlink{classBackUpPiles_a46e8e72440b3e2f13ee02120f25aaf8b}{libere\-Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Classe permettant de garder en mémoire une liste des piles (pointeurs vers des objets de type \-Memento) ce qui permet donc de réaliser le \-Undo et le \-Redo de la pile. 
+
+\-Le \-Design \-Pattern \-Singleton est utilisé. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classBackUpPiles_a82adf7d399044e2bf5de8861d8a7326e}{\index{\-Back\-Up\-Piles@{\-Back\-Up\-Piles}!ajouter\-Nouvelle\-Pile@{ajouter\-Nouvelle\-Pile}}
+\index{ajouter\-Nouvelle\-Pile@{ajouter\-Nouvelle\-Pile}!BackUpPiles@{\-Back\-Up\-Piles}}
+\subsubsection[{ajouter\-Nouvelle\-Pile}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Back\-Up\-Piles\-::ajouter\-Nouvelle\-Pile} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Pile\-::\-Memento} $\ast$}]{pile}
+\end{DoxyParamCaption}
+)}}\label{classBackUpPiles_a82adf7d399044e2bf5de8861d8a7326e}
+
+
+\-Ajoute une nouvelle instance de pile dans la liste des piles. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em \-Un} & pointeur vers un objet de type \-Memento contenant la nouvelle instance de pile.\\
+\hline
+\end{DoxyParams}
+\-Ajoute une nouvelle instance de pile dans la liste des piles. \hypertarget{classBackUpPiles_a919f7dfc07a81980442ccfc109c9cbf2}{\index{\-Back\-Up\-Piles@{\-Back\-Up\-Piles}!clear\-Back\-Up\-Piles@{clear\-Back\-Up\-Piles}}
+\index{clear\-Back\-Up\-Piles@{clear\-Back\-Up\-Piles}!BackUpPiles@{\-Back\-Up\-Piles}}
+\subsubsection[{clear\-Back\-Up\-Piles}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Back\-Up\-Piles\-::clear\-Back\-Up\-Piles} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBackUpPiles_a919f7dfc07a81980442ccfc109c9cbf2}
+\-Libère la liste des piles et initialise l'index à 0. \hypertarget{classBackUpPiles_a6712c6c4a51446c1299585c7078fe3da}{\index{\-Back\-Up\-Piles@{\-Back\-Up\-Piles}!get\-Derniere\-Pile@{get\-Derniere\-Pile}}
+\index{get\-Derniere\-Pile@{get\-Derniere\-Pile}!BackUpPiles@{\-Back\-Up\-Piles}}
+\subsubsection[{get\-Derniere\-Pile}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-Pile\-::\-Memento} $\ast$ {\bf \-Back\-Up\-Piles\-::get\-Derniere\-Pile} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classBackUpPiles_a6712c6c4a51446c1299585c7078fe3da}
+
+
+\-Retourne la pile précédente, celle se trouvant à l'index m\-Index\-Liste. \{ \-U\-N\-D\-O \}. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Un pointeur vers un objet de type \-Memento correspondant contenant la pile précédente.
+\end{DoxyReturn}
+\-Retourne la pile précédente, celle se trouvant à l'index m\-Index\-Liste. \hypertarget{classBackUpPiles_a7358321a5930e0ab44a24c967218acc9}{\index{\-Back\-Up\-Piles@{\-Back\-Up\-Piles}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!BackUpPiles@{\-Back\-Up\-Piles}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Back\-Up\-Piles} $\ast$ {\bf \-Back\-Up\-Piles\-::get\-Instance} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classBackUpPiles_a7358321a5930e0ab44a24c967218acc9}
+
+
+\-Retourne l'unique instance de cette classe. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Un pointeur vers l'unique instance de cette classe.
+\end{DoxyReturn}
+\-Retourne l'unique instance de cette classe. \hypertarget{classBackUpPiles_ab46243afaf7baf460bcd1eec2ec15a3b}{\index{\-Back\-Up\-Piles@{\-Back\-Up\-Piles}!get\-Pile\-Suivante@{get\-Pile\-Suivante}}
+\index{get\-Pile\-Suivante@{get\-Pile\-Suivante}!BackUpPiles@{\-Back\-Up\-Piles}}
+\subsubsection[{get\-Pile\-Suivante}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-Pile\-::\-Memento} $\ast$ {\bf \-Back\-Up\-Piles\-::get\-Pile\-Suivante} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classBackUpPiles_ab46243afaf7baf460bcd1eec2ec15a3b}
+
+
+\-Retourne la pile suivante, celle se trouvant à l'index m\-Index\-Liste. \{ \-R\-E\-D\-O \}. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Un pointeur vers un objet de type \-Memento correspondant contenant la pile suivante.
+\end{DoxyReturn}
+\-Retourne la pile suivante, celle se trouvant à l'index m\-Index\-Liste. \hypertarget{classBackUpPiles_a46e8e72440b3e2f13ee02120f25aaf8b}{\index{\-Back\-Up\-Piles@{\-Back\-Up\-Piles}!libere\-Instance@{libere\-Instance}}
+\index{libere\-Instance@{libere\-Instance}!BackUpPiles@{\-Back\-Up\-Piles}}
+\subsubsection[{libere\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Back\-Up\-Piles\-::libere\-Instance} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classBackUpPiles_a46e8e72440b3e2f13ee02120f25aaf8b}
+\-Libère l'unique instance de cette classe. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BackUpPiles_8h}{\-Back\-Up\-Piles.\-h}\item 
+\-Back\-Up\-Piles.\-cpp\end{DoxyCompactItemize}

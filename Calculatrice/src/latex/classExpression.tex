@@ -1,0 +1,187 @@
+\hypertarget{classExpression}{\section{\-Expression \-Class \-Reference}
+\label{classExpression}\index{\-Expression@{\-Expression}}
+}
+
+
+\-Classe permettant de créer et manipuler des constantes de type \hyperlink{classExpression}{\-Expression}. \{ hérite de \hyperlink{classConstante}{\-Constante} \}.  
+
+
+
+
+{\ttfamily \#include $<$\-Expression.\-h$>$}
+
+\-Inheritance diagram for \-Expression\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classExpression}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classExpression_aa235eb34251cdfe3cd9c76bb236688fe}{\-Expression} (const \-Q\-String \&s=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em \-Crée un objet de cette classe. \end{DoxyCompactList}\item 
+void \hyperlink{classExpression_a1cb7bec11fe237eba6caab975f7323e7}{eval} () const 
+\item 
+\hyperlink{classConstante}{\-Constante} \& \hyperlink{classExpression_a1c721aa4c3ea8e860fb229f719652667}{addition} (const \hyperlink{classConstante}{\-Constante} \&n) const 
+\begin{DoxyCompactList}\small\item\em \-Retourne la concatenation de l'expression encapsulée par cette classe, de la constante passée en paramètre et de l'opérateur '+'. \end{DoxyCompactList}\item 
+\hyperlink{classConstante}{\-Constante} \& \hyperlink{classExpression_abd4850801886dae0b74e0c22fd45006f}{soustraction} (const \hyperlink{classConstante}{\-Constante} \&n) const 
+\begin{DoxyCompactList}\small\item\em \-Retourne la concatenation de l'expression encapsulée par cette classe, de la constante passée en paramètre et de l'opérateur '-\/'. \end{DoxyCompactList}\item 
+\hyperlink{classConstante}{\-Constante} \& \hyperlink{classExpression_af3b11dc48c440f08df10aa98aaf11deb}{multiplication} (const \hyperlink{classConstante}{\-Constante} \&n) const 
+\begin{DoxyCompactList}\small\item\em \-Retourne la concatenation de l'expression encapsulée par cette classe, de la constante passée en paramètre et de l'opérateur '$\ast$'. \end{DoxyCompactList}\item 
+\hyperlink{classConstante}{\-Constante} \& \hyperlink{classExpression_ae9b021228fe5cbbe66583784a4f9ed40}{division} (const \hyperlink{classConstante}{\-Constante} \&n) const 
+\begin{DoxyCompactList}\small\item\em \-Retourne la concatenation de l'expression encapsulée par cette classe, de la constante passée en paramètre et de l'opérateur '/'. \end{DoxyCompactList}\item 
+virtual \hyperlink{classExpression}{\-Expression} $\ast$ \hyperlink{classExpression_ad357e8bb1174b3582833ebcbf6d6e232}{clone} () const 
+\begin{DoxyCompactList}\small\item\em \-Crée une nouvelle instance de cette classe. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classConstante}{\-Constante}. \end{DoxyCompactList}\item 
+\-Q\-String \hyperlink{classExpression_a60e6e305cdd8e878df2e3081ae15a4d0}{to\-String} () const 
+\begin{DoxyCompactList}\small\item\em \-Retourne une chaine de caractères correspondant aux informations encapsulées par une expression. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classConstante}{\-Constante}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Classe permettant de créer et manipuler des constantes de type \hyperlink{classExpression}{\-Expression}. \{ hérite de \hyperlink{classConstante}{\-Constante} \}. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classExpression_aa235eb34251cdfe3cd9c76bb236688fe}{\index{\-Expression@{\-Expression}!\-Expression@{\-Expression}}
+\index{\-Expression@{\-Expression}!Expression@{\-Expression}}
+\subsubsection[{\-Expression}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Expression\-::\-Expression} (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-String \&}]{s = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classExpression_aa235eb34251cdfe3cd9c76bb236688fe}
+
+
+\-Crée un objet de cette classe. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em \-Une} & chaine de caractères correspondant à l'expression.\\
+\hline
+\end{DoxyParams}
+\-Crée un objet de cette classe. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classExpression_a1c721aa4c3ea8e860fb229f719652667}{\index{\-Expression@{\-Expression}!addition@{addition}}
+\index{addition@{addition}!Expression@{\-Expression}}
+\subsubsection[{addition}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Constante} \& {\bf \-Expression\-::addition} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Constante} \&}]{n}
+\end{DoxyParamCaption}
+) const}}\label{classExpression_a1c721aa4c3ea8e860fb229f719652667}
+
+
+\-Retourne la concatenation de l'expression encapsulée par cette classe, de la constante passée en paramètre et de l'opérateur '+'. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-La constante à concatener. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Retourne la concatenation de l'expression encapsulée par cette classe, de la constante passée en paramètre et de l'opérateur '+'.
+\end{DoxyReturn}
+\-Retourne la concatenation de l'expression encapsulée par cette classe, de la constante passée en paramètre et de l'opérateur '+'. \hypertarget{classExpression_ad357e8bb1174b3582833ebcbf6d6e232}{\index{\-Expression@{\-Expression}!clone@{clone}}
+\index{clone@{clone}!Expression@{\-Expression}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Expression} $\ast$ {\bf \-Expression\-::clone} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{classExpression_ad357e8bb1174b3582833ebcbf6d6e232}
+
+
+\-Crée une nouvelle instance de cette classe. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classConstante}{\-Constante}. 
+
+\begin{DoxyReturn}{\-Returns}
+\-La nouvelle instance de cette classe.
+\end{DoxyReturn}
+\-Crée une nouvelle instance de cette classe. 
+
+\-Implements \hyperlink{classConstante_a5769ea385161e02bd2d1bcadefc2c510}{\-Constante}.
+
+\hypertarget{classExpression_ae9b021228fe5cbbe66583784a4f9ed40}{\index{\-Expression@{\-Expression}!division@{division}}
+\index{division@{division}!Expression@{\-Expression}}
+\subsubsection[{division}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Constante} \& {\bf \-Expression\-::division} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Constante} \&}]{n}
+\end{DoxyParamCaption}
+) const}}\label{classExpression_ae9b021228fe5cbbe66583784a4f9ed40}
+
+
+\-Retourne la concatenation de l'expression encapsulée par cette classe, de la constante passée en paramètre et de l'opérateur '/'. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-La constante à concatener. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Retourne la concatenation de l'expression encapsulée par cette classe, de la constante passée en paramètre et de l'opérateur '/'.
+\end{DoxyReturn}
+\-Retourne la concatenation de l'expression encapsulée par cette classe, de la constante passée en paramètre et de l'opérateur '/'. \hypertarget{classExpression_a1cb7bec11fe237eba6caab975f7323e7}{\index{\-Expression@{\-Expression}!eval@{eval}}
+\index{eval@{eval}!Expression@{\-Expression}}
+\subsubsection[{eval}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Expression\-::eval} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classExpression_a1cb7bec11fe237eba6caab975f7323e7}
+\-Evalue l'expression encapsulée par cette classe. \hypertarget{classExpression_af3b11dc48c440f08df10aa98aaf11deb}{\index{\-Expression@{\-Expression}!multiplication@{multiplication}}
+\index{multiplication@{multiplication}!Expression@{\-Expression}}
+\subsubsection[{multiplication}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Constante} \& {\bf \-Expression\-::multiplication} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Constante} \&}]{n}
+\end{DoxyParamCaption}
+) const}}\label{classExpression_af3b11dc48c440f08df10aa98aaf11deb}
+
+
+\-Retourne la concatenation de l'expression encapsulée par cette classe, de la constante passée en paramètre et de l'opérateur '$\ast$'. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-La constante à concatener. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Retourne la concatenation de l'expression encapsulée par cette classe, de la constante passée en paramètre et de l'opérateur '$\ast$'.
+\end{DoxyReturn}
+\-Retourne la concatenation de l'expression encapsulée par cette classe, de la constante passée en paramètre et de l'opérateur '/'. \hypertarget{classExpression_abd4850801886dae0b74e0c22fd45006f}{\index{\-Expression@{\-Expression}!soustraction@{soustraction}}
+\index{soustraction@{soustraction}!Expression@{\-Expression}}
+\subsubsection[{soustraction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Constante} \& {\bf \-Expression\-::soustraction} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Constante} \&}]{n}
+\end{DoxyParamCaption}
+) const}}\label{classExpression_abd4850801886dae0b74e0c22fd45006f}
+
+
+\-Retourne la concatenation de l'expression encapsulée par cette classe, de la constante passée en paramètre et de l'opérateur '-\/'. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-La constante à concatener. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Retourne la concatenation de l'expression encapsulée par cette classe, de la constante passée en paramètre et de l'opérateur '-\/'.
+\end{DoxyReturn}
+\-Retourne la concatenation de l'expression encapsulée par cette classe, de la constante passée en paramètre et de l'opérateur '-\/'. \hypertarget{classExpression_a60e6e305cdd8e878df2e3081ae15a4d0}{\index{\-Expression@{\-Expression}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Expression@{\-Expression}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String {\bf \-Expression\-::to\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{classExpression_a60e6e305cdd8e878df2e3081ae15a4d0}
+
+
+\-Retourne une chaine de caractères correspondant aux informations encapsulées par une expression. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classConstante}{\-Constante}. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Une chaine de caractères correspondant aux informations encapsulées par une expression.
+\end{DoxyReturn}
+\-Retourne une chaine de caractères correspondant aux informations encapsulées par une expression. 
+
+\-Implements \hyperlink{classConstante_ad5ea6850196ee9f86b74c74009a87ab1}{\-Constante}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Expression_8h}{\-Expression.\-h}\item 
+\-Expression.\-cpp\end{DoxyCompactItemize}

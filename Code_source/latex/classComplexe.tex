@@ -1,0 +1,303 @@
+\hypertarget{classComplexe}{\section{\-Complexe \-Class \-Reference}
+\label{classComplexe}\index{\-Complexe@{\-Complexe}}
+}
+
+
+\-Classe permettant de créer et manipuler des constantes de type \hyperlink{classComplexe}{\-Complexe}. \{ hérite de \hyperlink{classNombre}{\-Nombre} \}.  
+
+
+
+
+{\ttfamily \#include $<$\-Complexe.\-h$>$}
+
+\-Inheritance diagram for \-Complexe\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classComplexe}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classComplexe_a562ddecce2f4ab4b7535140fad2d0224}{\-Complexe} (const \hyperlink{classNonComplexe}{\-Non\-Complexe} \&re, const \hyperlink{classNonComplexe}{\-Non\-Complexe} \&im)
+\begin{DoxyCompactList}\small\item\em \-Crée un nombre complexe. \end{DoxyCompactList}\item 
+\hyperlink{classComplexe_aa0a80cdd5bd70c226641c43c251a0d24}{\-Complexe} (const \hyperlink{classNombre}{\-Nombre} \&re, const \hyperlink{classNombre}{\-Nombre} \&im)
+\begin{DoxyCompactList}\small\item\em \-Crée un nombre complexe. \end{DoxyCompactList}\item 
+\hyperlink{classComplexe_ac92996231047d39d40e11384bb9311b6}{$\sim$\-Complexe} ()
+\item 
+\hyperlink{classNombre}{\-Nombre} \& \hyperlink{classComplexe_a699074c8d13ed87b68aeb80463ea1379}{addition} (const \hyperlink{classNombre}{\-Nombre} \&n) const 
+\begin{DoxyCompactList}\small\item\em \-Calcule la somme de deux nombres complexe. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{classNombre}{\-Nombre} \& \hyperlink{classComplexe_a54ecc525a7dc0e6491cd3125010b30bf}{soustraction} (const \hyperlink{classNombre}{\-Nombre} \&n) const 
+\begin{DoxyCompactList}\small\item\em \-Calcule la soustraction de deux nombres complexe. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{classNombre}{\-Nombre} \& \hyperlink{classComplexe_a1137e6bfa881a8523463adf6f1f15a36}{multiplication} (const \hyperlink{classNombre}{\-Nombre} \&n) const 
+\begin{DoxyCompactList}\small\item\em \-Calcule la multiplication de deux nombres complexe. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{classNombre}{\-Nombre} \& \hyperlink{classComplexe_aad8b6ff92139b04c7357a0e566926a20}{division} (const \hyperlink{classNombre}{\-Nombre} \&n) const 
+\begin{DoxyCompactList}\small\item\em \-Calcule la division de deux nombres complexe. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{classNombre}{\-Nombre} \& \hyperlink{classComplexe_ae22fa4e15e4d048c6094ae266b6a750e}{sign} () const 
+\begin{DoxyCompactList}\small\item\em \-Calcule l'opposée d'un nombre complexe. \-Méthode virtuelle héritée et reimplémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{classNombre}{\-Nombre} \& \hyperlink{classComplexe_a4d7ad8bc647f9c3067a0093619f609c0}{sqr} () const 
+\begin{DoxyCompactList}\small\item\em \-Calcule le carré d'un nombre complexe. \-Méthode virtuelle héritée et reimplémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{classNombre}{\-Nombre} \& \hyperlink{classComplexe_a1f1f8bb3f3c98b55ed934b0c8695bf2f}{cube} () const 
+\begin{DoxyCompactList}\small\item\em \-Calcule le cube d'un nombre complexe. \-Méthode virtuelle héritée et reimplémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{classNombre}{\-Nombre} \& \hyperlink{classComplexe_a868e620eb3a7cea74b7111254dfd6101}{module} () const 
+\begin{DoxyCompactList}\small\item\em \-Calcule le module d'un nombre complexe. \end{DoxyCompactList}\item 
+\-Q\-String \hyperlink{classComplexe_a327fd83ec9743fb43c5d47831d8ed45c}{to\-String} () const 
+\begin{DoxyCompactList}\small\item\em \-Retourne une chaine de caractères correspondant aux informations encapsulées par un nombre complexe. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classConstante}{\-Constante}. \end{DoxyCompactList}\item 
+virtual \hyperlink{classComplexe}{\-Complexe} $\ast$ \hyperlink{classComplexe_a7a7a8d883e959fd7d5f84d5b2b7b2a9e}{clone} () const 
+\begin{DoxyCompactList}\small\item\em \-Crée une nouvelle instance de cette classe. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classConstante}{\-Constante}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Classe permettant de créer et manipuler des constantes de type \hyperlink{classComplexe}{\-Complexe}. \{ hérite de \hyperlink{classNombre}{\-Nombre} \}. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classComplexe_a562ddecce2f4ab4b7535140fad2d0224}{\index{\-Complexe@{\-Complexe}!\-Complexe@{\-Complexe}}
+\index{\-Complexe@{\-Complexe}!Complexe@{\-Complexe}}
+\subsubsection[{\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Complexe\-::\-Complexe} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Non\-Complexe} \&}]{re, }
+\item[{const {\bf \-Non\-Complexe} \&}]{im}
+\end{DoxyParamCaption}
+)}}\label{classComplexe_a562ddecce2f4ab4b7535140fad2d0224}
+
+
+\-Crée un nombre complexe. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em re} & \-La partie réelle de ce nombre complexe. \\
+\hline
+{\em im} & \-La partie imaginaire de ce nombre complexe.\\
+\hline
+\end{DoxyParams}
+\-Crée un nombre complexe. \hypertarget{classComplexe_aa0a80cdd5bd70c226641c43c251a0d24}{\index{\-Complexe@{\-Complexe}!\-Complexe@{\-Complexe}}
+\index{\-Complexe@{\-Complexe}!Complexe@{\-Complexe}}
+\subsubsection[{\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Complexe\-::\-Complexe} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Nombre} \&}]{re, }
+\item[{const {\bf \-Nombre} \&}]{im}
+\end{DoxyParamCaption}
+)}}\label{classComplexe_aa0a80cdd5bd70c226641c43c251a0d24}
+
+
+\-Crée un nombre complexe. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em re} & \-La partie réelle de ce nombre complexe. \\
+\hline
+{\em im} & \-La partie imaginaire de ce nombre complexe.\\
+\hline
+\end{DoxyParams}
+\-Crée un nombre complexe. \hypertarget{classComplexe_ac92996231047d39d40e11384bb9311b6}{\index{\-Complexe@{\-Complexe}!$\sim$\-Complexe@{$\sim$\-Complexe}}
+\index{$\sim$\-Complexe@{$\sim$\-Complexe}!Complexe@{\-Complexe}}
+\subsubsection[{$\sim$\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Complexe\-::$\sim$\-Complexe} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classComplexe_ac92996231047d39d40e11384bb9311b6}
+\-Détruit cette instance de la classe \hyperlink{classComplexe}{\-Complexe}. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classComplexe_a699074c8d13ed87b68aeb80463ea1379}{\index{\-Complexe@{\-Complexe}!addition@{addition}}
+\index{addition@{addition}!Complexe@{\-Complexe}}
+\subsubsection[{addition}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre} \& {\bf \-Complexe\-::addition} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Nombre} \&}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classComplexe_a699074c8d13ed87b68aeb80463ea1379}
+
+
+\-Calcule la somme de deux nombres complexe. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-L'autre nombre complexe. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-La somme de deux nombres complexe.
+\end{DoxyReturn}
+\-Calcule la somme de deux nombres complexe. 
+
+\-Implements \hyperlink{classNombre_ad40df43089fcb34d072b4e955a0eb4fe}{\-Nombre}.
+
+\hypertarget{classComplexe_a7a7a8d883e959fd7d5f84d5b2b7b2a9e}{\index{\-Complexe@{\-Complexe}!clone@{clone}}
+\index{clone@{clone}!Complexe@{\-Complexe}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Complexe} $\ast$ {\bf \-Complexe\-::clone} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{classComplexe_a7a7a8d883e959fd7d5f84d5b2b7b2a9e}
+
+
+\-Crée une nouvelle instance de cette classe. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classConstante}{\-Constante}. 
+
+\begin{DoxyReturn}{\-Returns}
+\-La nouvelle instance de cette classe.
+\end{DoxyReturn}
+\-Crée une nouvelle instance de cette classe. 
+
+\-Implements \hyperlink{classNombre_afde037df1a7545dbadb537829e90f970}{\-Nombre}.
+
+\hypertarget{classComplexe_a1f1f8bb3f3c98b55ed934b0c8695bf2f}{\index{\-Complexe@{\-Complexe}!cube@{cube}}
+\index{cube@{cube}!Complexe@{\-Complexe}}
+\subsubsection[{cube}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre} \& {\bf \-Complexe\-::cube} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classComplexe_a1f1f8bb3f3c98b55ed934b0c8695bf2f}
+
+
+\-Calcule le cube d'un nombre complexe. \-Méthode virtuelle héritée et reimplémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Le cube d'un nombre complexe.
+\end{DoxyReturn}
+\-Calcule le cube d'un nombre complexe. 
+
+\-Reimplemented from \hyperlink{classNombre_a14b257b875fd98a9d53cf275464957e5}{\-Nombre}.
+
+\hypertarget{classComplexe_aad8b6ff92139b04c7357a0e566926a20}{\index{\-Complexe@{\-Complexe}!division@{division}}
+\index{division@{division}!Complexe@{\-Complexe}}
+\subsubsection[{division}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre} \& {\bf \-Complexe\-::division} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Nombre} \&}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classComplexe_aad8b6ff92139b04c7357a0e566926a20}
+
+
+\-Calcule la division de deux nombres complexe. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-L'autre nombre complexe. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-La division de deux nombres complexe.
+\end{DoxyReturn}
+\-Calcule la division de deux nombres complexe. 
+
+\-Implements \hyperlink{classNombre_ae4e773caee4bb349cdbe7155e26290d6}{\-Nombre}.
+
+\hypertarget{classComplexe_a868e620eb3a7cea74b7111254dfd6101}{\index{\-Complexe@{\-Complexe}!module@{module}}
+\index{module@{module}!Complexe@{\-Complexe}}
+\subsubsection[{module}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre} \& {\bf \-Complexe\-::module} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classComplexe_a868e620eb3a7cea74b7111254dfd6101}
+
+
+\-Calcule le module d'un nombre complexe. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Le module d'un nombre complexe.
+\end{DoxyReturn}
+\-Calcule le module d'un nombre complexe. \hypertarget{classComplexe_a1137e6bfa881a8523463adf6f1f15a36}{\index{\-Complexe@{\-Complexe}!multiplication@{multiplication}}
+\index{multiplication@{multiplication}!Complexe@{\-Complexe}}
+\subsubsection[{multiplication}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre} \& {\bf \-Complexe\-::multiplication} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Nombre} \&}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classComplexe_a1137e6bfa881a8523463adf6f1f15a36}
+
+
+\-Calcule la multiplication de deux nombres complexe. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-L'autre nombre complexe. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-La multiplication de deux nombres complexe.
+\end{DoxyReturn}
+\-Calcule la multiplication de deux nombres complexe. 
+
+\-Implements \hyperlink{classNombre_a742022c5e875fe24046d1c28cf043b42}{\-Nombre}.
+
+\hypertarget{classComplexe_ae22fa4e15e4d048c6094ae266b6a750e}{\index{\-Complexe@{\-Complexe}!sign@{sign}}
+\index{sign@{sign}!Complexe@{\-Complexe}}
+\subsubsection[{sign}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre} \& {\bf \-Complexe\-::sign} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classComplexe_ae22fa4e15e4d048c6094ae266b6a750e}
+
+
+\-Calcule l'opposée d'un nombre complexe. \-Méthode virtuelle héritée et reimplémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. 
+
+\begin{DoxyReturn}{\-Returns}
+\-L'opposée d'un nombre complexe.
+\end{DoxyReturn}
+\-Calcule l'opposée d'un nombre complexe. 
+
+\-Reimplemented from \hyperlink{classNombre_a3fb106bcd953c9d3e03609bf1d49f2e7}{\-Nombre}.
+
+\hypertarget{classComplexe_a54ecc525a7dc0e6491cd3125010b30bf}{\index{\-Complexe@{\-Complexe}!soustraction@{soustraction}}
+\index{soustraction@{soustraction}!Complexe@{\-Complexe}}
+\subsubsection[{soustraction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre} \& {\bf \-Complexe\-::soustraction} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Nombre} \&}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classComplexe_a54ecc525a7dc0e6491cd3125010b30bf}
+
+
+\-Calcule la soustraction de deux nombres complexe. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-L'autre nombre complexe. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-La soustraction de deux nombres complexe.
+\end{DoxyReturn}
+\-Calcule la soustraction de deux nombres complexe. 
+
+\-Implements \hyperlink{classNombre_aae525a90cd3ddeda1ce8349a23634e75}{\-Nombre}.
+
+\hypertarget{classComplexe_a4d7ad8bc647f9c3067a0093619f609c0}{\index{\-Complexe@{\-Complexe}!sqr@{sqr}}
+\index{sqr@{sqr}!Complexe@{\-Complexe}}
+\subsubsection[{sqr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre} \& {\bf \-Complexe\-::sqr} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classComplexe_a4d7ad8bc647f9c3067a0093619f609c0}
+
+
+\-Calcule le carré d'un nombre complexe. \-Méthode virtuelle héritée et reimplémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Le carré d'un nombre complexe.
+\end{DoxyReturn}
+\-Calcule le carré d'un nombre complexe. 
+
+\-Reimplemented from \hyperlink{classNombre_a43b5ad781c1274196907939a36ecefcf}{\-Nombre}.
+
+\hypertarget{classComplexe_a327fd83ec9743fb43c5d47831d8ed45c}{\index{\-Complexe@{\-Complexe}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Complexe@{\-Complexe}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String {\bf \-Complexe\-::to\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classComplexe_a327fd83ec9743fb43c5d47831d8ed45c}
+
+
+\-Retourne une chaine de caractères correspondant aux informations encapsulées par un nombre complexe. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classConstante}{\-Constante}. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Une chaine de caractères correspondant aux informations encapsulées par un nombre complexe.
+\end{DoxyReturn}
+\-Retourne une chaine de caractères correspondant aux informations encapsulées par un nombre complexe. 
+
+\-Implements \hyperlink{classNombre_a8df232159bfd0e9f7e153cc73c8b128c}{\-Nombre}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Complexe_8h}{\-Complexe.\-h}\item 
+\-Complexe.\-cpp\end{DoxyCompactItemize}

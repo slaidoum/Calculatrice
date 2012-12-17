@@ -1,0 +1,369 @@
+\hypertarget{classRationnel}{\section{\-Rationnel \-Class \-Reference}
+\label{classRationnel}\index{\-Rationnel@{\-Rationnel}}
+}
+
+
+\-Classe permettant de créer et manipuler des constantes de type \hyperlink{classRationnel}{\-Rationnel}. \{ hérite de \hyperlink{classNonComplexe}{\-Non\-Complexe} \}.  
+
+
+
+
+{\ttfamily \#include $<$\-Rationnel.\-h$>$}
+
+\-Inheritance diagram for \-Rationnel\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRationnel}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRationnel_a4a0ffcb25f5a20c6dc4da18c0c80110d}{\-Rationnel} (const \hyperlink{classEntier}{\-Entier} \&num, const \hyperlink{classEntier}{\-Entier} \&den)
+\begin{DoxyCompactList}\small\item\em \-Crée un nombre rationnel. \end{DoxyCompactList}\item 
+\hyperlink{classRationnel_aa60d0952f71e99dded642d42e9dffa3f}{\-Rationnel} (const \hyperlink{classNonComplexe}{\-Non\-Complexe} \&num, const \hyperlink{classNonComplexe}{\-Non\-Complexe} \&den)
+\begin{DoxyCompactList}\small\item\em \-Crée un nombre rationnel. \end{DoxyCompactList}\item 
+\hyperlink{classRationnel_ab5ce094e3a57591f7b7fa6f634490d24}{\-Rationnel} (unsigned int num=0, unsigned int den=1)
+\begin{DoxyCompactList}\small\item\em \-Crée un nombre rationnel. \end{DoxyCompactList}\item 
+\hyperlink{classRationnel_ab0257aa2fd1b258506ec6d2a268612c6}{$\sim$\-Rationnel} ()
+\item 
+\hyperlink{classNombre}{\-Nombre} \& \hyperlink{classRationnel_a0b04b9aa79b75d4a9af8cb8b79f753a7}{addition} (const \hyperlink{classNombre}{\-Nombre} \&n) const 
+\begin{DoxyCompactList}\small\item\em \-Calcule la somme de ce nombre rationnel et d'un nombre. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{classNombre}{\-Nombre} \& \hyperlink{classRationnel_a568a44d3bb7c39ec7096a939ce067f8f}{soustraction} (const \hyperlink{classNombre}{\-Nombre} \&n) const 
+\begin{DoxyCompactList}\small\item\em \-Calcule la soustraction de ce nombre rationnel et d'un nombre. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{classNombre}{\-Nombre} \& \hyperlink{classRationnel_a08cda12f3d5f7ed92a4a133ad2cf0b31}{multiplication} (const \hyperlink{classNombre}{\-Nombre} \&n) const 
+\begin{DoxyCompactList}\small\item\em \-Calcule la multiplication de ce nombre rationnel et d'un nombre. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{classNombre}{\-Nombre} \& \hyperlink{classRationnel_a7797b234a41853c34db9a7bae8b77538}{division} (const \hyperlink{classNombre}{\-Nombre} \&n) const 
+\begin{DoxyCompactList}\small\item\em \-Calcule la division de ce nombre rationnel et d'un nombre. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{classNonComplexe}{\-Non\-Complexe} \& \hyperlink{classRationnel_ab828112026340067e5b938b94fcbe110}{to\-Entier} () const 
+\begin{DoxyCompactList}\small\item\em \-Converti le nombre rationnel en un nombre entier. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNonComplexe}{\-Non\-Complexe}. \end{DoxyCompactList}\item 
+\hyperlink{classNonComplexe}{\-Non\-Complexe} \& \hyperlink{classRationnel_aae5902c11285baa3f2a48fbb94cfa006}{to\-Reel} () const 
+\begin{DoxyCompactList}\small\item\em \-Converti le nombre rationnel en un nombre réel. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNonComplexe}{\-Non\-Complexe}. \end{DoxyCompactList}\item 
+\hyperlink{classNonComplexe}{\-Non\-Complexe} \& \hyperlink{classRationnel_abee7f0032fc3edb4e0e4922174f988c9}{to\-Rationnel} () const 
+\begin{DoxyCompactList}\small\item\em \-Converti le nombre rationnel en un nombre rationnel. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNonComplexe}{\-Non\-Complexe}. \end{DoxyCompactList}\item 
+\hyperlink{classNonComplexe}{\-Non\-Complexe} \& \hyperlink{classRationnel_a5f58000bd9f49cb352b389460e4ec7d9}{to\-Complexe} () const 
+\begin{DoxyCompactList}\small\item\em \-Converti le nombre rationnel en un nombre complexe. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNonComplexe}{\-Non\-Complexe}. \end{DoxyCompactList}\item 
+void \hyperlink{classRationnel_a12ee060e5fca5f4291b222983d727268}{simplifier} ()
+\item 
+const \hyperlink{classEntier}{\-Entier} \& \hyperlink{classRationnel_aace94cd795afce78654255e32d627910}{get\-Num} () const 
+\begin{DoxyCompactList}\small\item\em \-Retourne le numérateur de ce nombre rationnel. \end{DoxyCompactList}\item 
+const \hyperlink{classEntier}{\-Entier} \& \hyperlink{classRationnel_aa0a393337f84b8aa3f1fa8958b551d7e}{get\-Den} () const 
+\begin{DoxyCompactList}\small\item\em \-Retourne le dénominateur de ce nombre rationnel. \end{DoxyCompactList}\item 
+virtual \hyperlink{classRationnel}{\-Rationnel} $\ast$ \hyperlink{classRationnel_a422ec3e0c4465d08c4e9deceda6c442c}{clone} () const 
+\begin{DoxyCompactList}\small\item\em \-Crée une nouvelle instance de cette classe. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classConstante}{\-Constante}. \end{DoxyCompactList}\item 
+\-Q\-String \hyperlink{classRationnel_a41bc89d21ce161818f67ccfe296766c0}{to\-String} () const 
+\begin{DoxyCompactList}\small\item\em \-Retourne une chaine de caractères correspondant aux informations encapsulées par un nombre rationnel. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classConstante}{\-Constante}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Classe permettant de créer et manipuler des constantes de type \hyperlink{classRationnel}{\-Rationnel}. \{ hérite de \hyperlink{classNonComplexe}{\-Non\-Complexe} \}. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classRationnel_a4a0ffcb25f5a20c6dc4da18c0c80110d}{\index{\-Rationnel@{\-Rationnel}!\-Rationnel@{\-Rationnel}}
+\index{\-Rationnel@{\-Rationnel}!Rationnel@{\-Rationnel}}
+\subsubsection[{\-Rationnel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Rationnel\-::\-Rationnel} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Entier} \&}]{num, }
+\item[{const {\bf \-Entier} \&}]{den}
+\end{DoxyParamCaption}
+)}}\label{classRationnel_a4a0ffcb25f5a20c6dc4da18c0c80110d}
+
+
+\-Crée un nombre rationnel. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em num} & \-Le numérateur de ce nombre rationnel. \\
+\hline
+{\em den} & \-Le dénominateur de ce nombre rationnel.\\
+\hline
+\end{DoxyParams}
+\-Crée un nombre rationnel. \hypertarget{classRationnel_aa60d0952f71e99dded642d42e9dffa3f}{\index{\-Rationnel@{\-Rationnel}!\-Rationnel@{\-Rationnel}}
+\index{\-Rationnel@{\-Rationnel}!Rationnel@{\-Rationnel}}
+\subsubsection[{\-Rationnel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Rationnel\-::\-Rationnel} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Non\-Complexe} \&}]{num, }
+\item[{const {\bf \-Non\-Complexe} \&}]{den}
+\end{DoxyParamCaption}
+)}}\label{classRationnel_aa60d0952f71e99dded642d42e9dffa3f}
+
+
+\-Crée un nombre rationnel. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em num} & \-Le numérateur de ce nombre rationnel. \\
+\hline
+{\em den} & \-Le dénominateur de ce nombre rationnel.\\
+\hline
+\end{DoxyParams}
+\-Crée un nombre rationnel. \hypertarget{classRationnel_ab5ce094e3a57591f7b7fa6f634490d24}{\index{\-Rationnel@{\-Rationnel}!\-Rationnel@{\-Rationnel}}
+\index{\-Rationnel@{\-Rationnel}!Rationnel@{\-Rationnel}}
+\subsubsection[{\-Rationnel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Rationnel\-::\-Rationnel} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{num = {\ttfamily 0}, }
+\item[{unsigned int}]{den = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{classRationnel_ab5ce094e3a57591f7b7fa6f634490d24}
+
+
+\-Crée un nombre rationnel. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em num} & \-Le numérateur de ce nombre rationnel. \\
+\hline
+{\em den} & \-Le dénominateur de ce nombre rationnel.\\
+\hline
+\end{DoxyParams}
+\-Crée un nombre rationnel. \hypertarget{classRationnel_ab0257aa2fd1b258506ec6d2a268612c6}{\index{\-Rationnel@{\-Rationnel}!$\sim$\-Rationnel@{$\sim$\-Rationnel}}
+\index{$\sim$\-Rationnel@{$\sim$\-Rationnel}!Rationnel@{\-Rationnel}}
+\subsubsection[{$\sim$\-Rationnel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Rationnel\-::$\sim$\-Rationnel} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRationnel_ab0257aa2fd1b258506ec6d2a268612c6}
+\-Détruit cette instance de la classe \hyperlink{classRationnel}{\-Rationnel}. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classRationnel_a0b04b9aa79b75d4a9af8cb8b79f753a7}{\index{\-Rationnel@{\-Rationnel}!addition@{addition}}
+\index{addition@{addition}!Rationnel@{\-Rationnel}}
+\subsubsection[{addition}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre} \& {\bf \-Rationnel\-::addition} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Nombre} \&}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classRationnel_a0b04b9aa79b75d4a9af8cb8b79f753a7}
+
+
+\-Calcule la somme de ce nombre rationnel et d'un nombre. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-Un nombre. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-La somme de ce nombre rationnel et d'un nombre.
+\end{DoxyReturn}
+\-Calcule la somme de ce nombre rationnel et d'un nombre. 
+
+\-Implements \hyperlink{classNonComplexe_a1ed6f047d5c576f03616535e3e92ab39}{\-Non\-Complexe}.
+
+\hypertarget{classRationnel_a422ec3e0c4465d08c4e9deceda6c442c}{\index{\-Rationnel@{\-Rationnel}!clone@{clone}}
+\index{clone@{clone}!Rationnel@{\-Rationnel}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Rationnel} $\ast$ {\bf \-Rationnel\-::clone} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{classRationnel_a422ec3e0c4465d08c4e9deceda6c442c}
+
+
+\-Crée une nouvelle instance de cette classe. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classConstante}{\-Constante}. 
+
+\begin{DoxyReturn}{\-Returns}
+\-La nouvelle instance de cette classe.
+\end{DoxyReturn}
+\-Crée une nouvelle instance de cette classe. 
+
+\-Implements \hyperlink{classNonComplexe_a7f1a3881b59680f3d3a7809c75ab2138}{\-Non\-Complexe}.
+
+\hypertarget{classRationnel_a7797b234a41853c34db9a7bae8b77538}{\index{\-Rationnel@{\-Rationnel}!division@{division}}
+\index{division@{division}!Rationnel@{\-Rationnel}}
+\subsubsection[{division}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre} \& {\bf \-Rationnel\-::division} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Nombre} \&}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classRationnel_a7797b234a41853c34db9a7bae8b77538}
+
+
+\-Calcule la division de ce nombre rationnel et d'un nombre. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-Un nombre. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-La division de ce nombre rationnel et d'un nombre.
+\end{DoxyReturn}
+\-Calcule la division de ce nombre rationnel et d'un nombre. 
+
+\-Implements \hyperlink{classNonComplexe_a1af698f4c7d50e69f2c7dfa3e7998cdd}{\-Non\-Complexe}.
+
+\hypertarget{classRationnel_aa0a393337f84b8aa3f1fa8958b551d7e}{\index{\-Rationnel@{\-Rationnel}!get\-Den@{get\-Den}}
+\index{get\-Den@{get\-Den}!Rationnel@{\-Rationnel}}
+\subsubsection[{get\-Den}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-Entier} \& {\bf \-Rationnel\-::get\-Den} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classRationnel_aa0a393337f84b8aa3f1fa8958b551d7e}
+
+
+\-Retourne le dénominateur de ce nombre rationnel. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Un nombre entier.
+\end{DoxyReturn}
+\-Retourne le dénominateur de ce nombre rationnel. \hypertarget{classRationnel_aace94cd795afce78654255e32d627910}{\index{\-Rationnel@{\-Rationnel}!get\-Num@{get\-Num}}
+\index{get\-Num@{get\-Num}!Rationnel@{\-Rationnel}}
+\subsubsection[{get\-Num}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-Entier} \& {\bf \-Rationnel\-::get\-Num} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classRationnel_aace94cd795afce78654255e32d627910}
+
+
+\-Retourne le numérateur de ce nombre rationnel. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Un nombre entier.
+\end{DoxyReturn}
+\-Retourne le numérateur de ce nombre rationnel. \hypertarget{classRationnel_a08cda12f3d5f7ed92a4a133ad2cf0b31}{\index{\-Rationnel@{\-Rationnel}!multiplication@{multiplication}}
+\index{multiplication@{multiplication}!Rationnel@{\-Rationnel}}
+\subsubsection[{multiplication}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre} \& {\bf \-Rationnel\-::multiplication} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Nombre} \&}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classRationnel_a08cda12f3d5f7ed92a4a133ad2cf0b31}
+
+
+\-Calcule la multiplication de ce nombre rationnel et d'un nombre. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-Un nombre. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-La multiplication de ce nombre rationnel et d'un nombre.
+\end{DoxyReturn}
+\-Calcule la multiplication de ce nombre rationnel et d'un nombre. 
+
+\-Implements \hyperlink{classNonComplexe_a7343c4742a895813a4b031fb67170dc8}{\-Non\-Complexe}.
+
+\hypertarget{classRationnel_a12ee060e5fca5f4291b222983d727268}{\index{\-Rationnel@{\-Rationnel}!simplifier@{simplifier}}
+\index{simplifier@{simplifier}!Rationnel@{\-Rationnel}}
+\subsubsection[{simplifier}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Rationnel\-::simplifier} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRationnel_a12ee060e5fca5f4291b222983d727268}
+\-Simplifie un nombre rationnel si cela est possible. \hypertarget{classRationnel_a568a44d3bb7c39ec7096a939ce067f8f}{\index{\-Rationnel@{\-Rationnel}!soustraction@{soustraction}}
+\index{soustraction@{soustraction}!Rationnel@{\-Rationnel}}
+\subsubsection[{soustraction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre} \& {\bf \-Rationnel\-::soustraction} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Nombre} \&}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classRationnel_a568a44d3bb7c39ec7096a939ce067f8f}
+
+
+\-Calcule la soustraction de ce nombre rationnel et d'un nombre. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNombre}{\-Nombre}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-Un nombre. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-La soustraction de ce nombre rationnel et d'un nombre.
+\end{DoxyReturn}
+\-Calcule la soustraction de ce nombre rationnel et d'un nombre. 
+
+\-Implements \hyperlink{classNonComplexe_ac7e41f7e2f5422687985a5fe501e243f}{\-Non\-Complexe}.
+
+\hypertarget{classRationnel_a5f58000bd9f49cb352b389460e4ec7d9}{\index{\-Rationnel@{\-Rationnel}!to\-Complexe@{to\-Complexe}}
+\index{to\-Complexe@{to\-Complexe}!Rationnel@{\-Rationnel}}
+\subsubsection[{to\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Non\-Complexe} \& {\bf \-Rationnel\-::to\-Complexe} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classRationnel_a5f58000bd9f49cb352b389460e4ec7d9}
+
+
+\-Converti le nombre rationnel en un nombre complexe. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNonComplexe}{\-Non\-Complexe}. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Une référence vers un nombre non complexe emmagasinant en réalité un nombre complexe.
+\end{DoxyReturn}
+\-Converti le nombre rationnel en un nombre complexe. 
+
+\-Implements \hyperlink{classNonComplexe_ad29a8407072d909cd204945d5cd5bc17}{\-Non\-Complexe}.
+
+\hypertarget{classRationnel_ab828112026340067e5b938b94fcbe110}{\index{\-Rationnel@{\-Rationnel}!to\-Entier@{to\-Entier}}
+\index{to\-Entier@{to\-Entier}!Rationnel@{\-Rationnel}}
+\subsubsection[{to\-Entier}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Non\-Complexe} \& {\bf \-Rationnel\-::to\-Entier} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classRationnel_ab828112026340067e5b938b94fcbe110}
+
+
+\-Converti le nombre rationnel en un nombre entier. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNonComplexe}{\-Non\-Complexe}. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Une référence vers un nombre non complexe emmagasinant en réalité un nombre entier.
+\end{DoxyReturn}
+\-Converti le nombre rationnel en un nombre entier. 
+
+\-Implements \hyperlink{classNonComplexe_af5751554285a6bf0bb1433a059bbfcdd}{\-Non\-Complexe}.
+
+\hypertarget{classRationnel_abee7f0032fc3edb4e0e4922174f988c9}{\index{\-Rationnel@{\-Rationnel}!to\-Rationnel@{to\-Rationnel}}
+\index{to\-Rationnel@{to\-Rationnel}!Rationnel@{\-Rationnel}}
+\subsubsection[{to\-Rationnel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Non\-Complexe} \& {\bf \-Rationnel\-::to\-Rationnel} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classRationnel_abee7f0032fc3edb4e0e4922174f988c9}
+
+
+\-Converti le nombre rationnel en un nombre rationnel. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNonComplexe}{\-Non\-Complexe}. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Une référence vers un nombre non complexe emmagasinant en réalité un nombre rationnel.
+\end{DoxyReturn}
+\-Converti le nombre rationnel en un nombre rationnel. 
+
+\-Implements \hyperlink{classNonComplexe_a5c416e7c9d4c011c67b69b112cc30cc1}{\-Non\-Complexe}.
+
+\hypertarget{classRationnel_aae5902c11285baa3f2a48fbb94cfa006}{\index{\-Rationnel@{\-Rationnel}!to\-Reel@{to\-Reel}}
+\index{to\-Reel@{to\-Reel}!Rationnel@{\-Rationnel}}
+\subsubsection[{to\-Reel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Non\-Complexe} \& {\bf \-Rationnel\-::to\-Reel} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classRationnel_aae5902c11285baa3f2a48fbb94cfa006}
+
+
+\-Converti le nombre rationnel en un nombre réel. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classNonComplexe}{\-Non\-Complexe}. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Une référence vers un nombre non complexe emmagasinant en réalité un nombre réel.
+\end{DoxyReturn}
+\-Converti le nombre rationnel en un nombre réel. 
+
+\-Implements \hyperlink{classNonComplexe_a0bd70b66aeb18213beb9d777287540de}{\-Non\-Complexe}.
+
+\hypertarget{classRationnel_a41bc89d21ce161818f67ccfe296766c0}{\index{\-Rationnel@{\-Rationnel}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Rationnel@{\-Rationnel}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String {\bf \-Rationnel\-::to\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classRationnel_a41bc89d21ce161818f67ccfe296766c0}
+
+
+\-Retourne une chaine de caractères correspondant aux informations encapsulées par un nombre rationnel. \-Méthode virtuelle pure héritée et implémentée depuis la classe \hyperlink{classConstante}{\-Constante}. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Une chaine de caractères correspondant aux informations encapsulées par un nombre rationnel.
+\end{DoxyReturn}
+\-Retourne une chaine de caractères correspondant aux informations encapsulées par un nombre rationnel. 
+
+\-Implements \hyperlink{classNonComplexe_abae1947a8f9f582f94d5e791ce4624d6}{\-Non\-Complexe}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Rationnel_8h}{\-Rationnel.\-h}\item 
+\-Rationnel.\-cpp\end{DoxyCompactItemize}

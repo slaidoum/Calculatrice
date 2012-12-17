@@ -1,0 +1,329 @@
+\hypertarget{classNombre}{\section{\-Nombre \-Class \-Reference}
+\label{classNombre}\index{\-Nombre@{\-Nombre}}
+}
+
+
+\-Classe abstraite étant utilisée comme interface pour les classes qui en héritent. \{ hérite de \hyperlink{classConstante}{\-Constante} \}.  
+
+
+
+
+{\ttfamily \#include $<$\-Nombre.\-h$>$}
+
+\-Inheritance diagram for \-Nombre\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classNombre}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNombre_a3c74c643475c2df0e2ecafe93a1e113a}{\-Nombre} ()
+\item 
+virtual \hyperlink{classNombre}{\-Nombre} \& \hyperlink{classNombre_a3fb106bcd953c9d3e03609bf1d49f2e7}{sign} () const 
+\begin{DoxyCompactList}\small\item\em \-Calcule l'opposée d'un nombre. \-Méthode virtuelle. \end{DoxyCompactList}\item 
+virtual \hyperlink{classNombre}{\-Nombre} \& \hyperlink{classNombre_a43b5ad781c1274196907939a36ecefcf}{sqr} () const 
+\begin{DoxyCompactList}\small\item\em \-Calcule le carré d'un nombre. \-Méthode virtuelle. \end{DoxyCompactList}\item 
+virtual \hyperlink{classNombre}{\-Nombre} \& \hyperlink{classNombre_a14b257b875fd98a9d53cf275464957e5}{cube} () const 
+\begin{DoxyCompactList}\small\item\em \-Calcule le cube d'un nombre. \-Méthode virtuelle. \end{DoxyCompactList}\item 
+\hyperlink{classNombre}{\-Nombre} \& \hyperlink{classNombre_a3e5a5aca1c59ff671feab5639ffed9b0}{operator+} (const \hyperlink{classNombre}{\-Nombre} \&n)
+\begin{DoxyCompactList}\small\item\em \-Calcule la somme de deux nombres. \end{DoxyCompactList}\item 
+\hyperlink{classNombre}{\-Nombre} \& \hyperlink{classNombre_a4d78f1887b4896ac59cbc66bdd919644}{operator-\/} (const \hyperlink{classNombre}{\-Nombre} \&n)
+\begin{DoxyCompactList}\small\item\em \-Calcule la soustraction de deux nombres. \end{DoxyCompactList}\item 
+\hyperlink{classNombre}{\-Nombre} \& \hyperlink{classNombre_a8d0fa5c9724a72a81dfb5a50f8698bad}{operator$\ast$} (const \hyperlink{classNombre}{\-Nombre} \&n)
+\begin{DoxyCompactList}\small\item\em \-Calcule la multiplication de deux nombres. \end{DoxyCompactList}\item 
+\hyperlink{classNombre}{\-Nombre} \& \hyperlink{classNombre_a0d46caf2a005dceb4f643a5d167d79a9}{operator/} (const \hyperlink{classNombre}{\-Nombre} \&n)
+\begin{DoxyCompactList}\small\item\em \-Calcule la division de deux nombres. \end{DoxyCompactList}\item 
+virtual \hyperlink{classNombre}{\-Nombre} \& \hyperlink{classNombre_ad40df43089fcb34d072b4e955a0eb4fe}{addition} (const \hyperlink{classNombre}{\-Nombre} \&nb) const =0
+\begin{DoxyCompactList}\small\item\em \-Calcule la somme de deux nombres. \-Méthode virtuelle pure héritée depuis la classe \hyperlink{classNombre}{\-Nombre}. \end{DoxyCompactList}\item 
+virtual \hyperlink{classNombre}{\-Nombre} \& \hyperlink{classNombre_aae525a90cd3ddeda1ce8349a23634e75}{soustraction} (const \hyperlink{classNombre}{\-Nombre} \&nb) const =0
+\begin{DoxyCompactList}\small\item\em \-Calcule la soustraction de deux nombres. \-Méthode virtuelle pure héritée depuis la classe \hyperlink{classNombre}{\-Nombre}. \end{DoxyCompactList}\item 
+virtual \hyperlink{classNombre}{\-Nombre} \& \hyperlink{classNombre_a742022c5e875fe24046d1c28cf043b42}{multiplication} (const \hyperlink{classNombre}{\-Nombre} \&nb) const =0
+\begin{DoxyCompactList}\small\item\em \-Calcule la multiplication de deux nombres. \-Méthode virtuelle pure héritée depuis la classe \hyperlink{classNombre}{\-Nombre}. \end{DoxyCompactList}\item 
+virtual \hyperlink{classNombre}{\-Nombre} \& \hyperlink{classNombre_ae4e773caee4bb349cdbe7155e26290d6}{division} (const \hyperlink{classNombre}{\-Nombre} \&nb) const =0
+\begin{DoxyCompactList}\small\item\em \-Calcule la division de deux nombres. \-Méthode virtuelle pure héritée depuis la classe \hyperlink{classNombre}{\-Nombre}. \end{DoxyCompactList}\item 
+virtual \hyperlink{classNombre}{\-Nombre} $\ast$ \hyperlink{classNombre_afde037df1a7545dbadb537829e90f970}{clone} () const =0
+\begin{DoxyCompactList}\small\item\em \-Crée une nouvelle instance de cette classe. \-Méthode virtuelle pure héritée depuis la classe \hyperlink{classConstante}{\-Constante}. \end{DoxyCompactList}\item 
+virtual \-Q\-String \hyperlink{classNombre_a8df232159bfd0e9f7e153cc73c8b128c}{to\-String} () const =0
+\begin{DoxyCompactList}\small\item\em \-Retourne une chaine de caractères correspondant aux informations encapsulées par un nombre. \-Méthode virtuelle pure héritée depuis la classe \hyperlink{classConstante}{\-Constante}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Classe abstraite étant utilisée comme interface pour les classes qui en héritent. \{ hérite de \hyperlink{classConstante}{\-Constante} \}. 
+
+\-Un \hyperlink{classNombre}{\-Nombre} peut être soit un \hyperlink{classComplexe}{\-Complexe} soit un \hyperlink{classNonComplexe}{\-Non\-Complexe}.
+
+\-Le \-Design \-Pattern \-Template \-Method est utilisé. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classNombre_a3c74c643475c2df0e2ecafe93a1e113a}{\index{\-Nombre@{\-Nombre}!\-Nombre@{\-Nombre}}
+\index{\-Nombre@{\-Nombre}!Nombre@{\-Nombre}}
+\subsubsection[{\-Nombre}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre\-::\-Nombre} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classNombre_a3c74c643475c2df0e2ecafe93a1e113a}
+\-Constructeur d'un nombre. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classNombre_ad40df43089fcb34d072b4e955a0eb4fe}{\index{\-Nombre@{\-Nombre}!addition@{addition}}
+\index{addition@{addition}!Nombre@{\-Nombre}}
+\subsubsection[{addition}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-Nombre}\& {\bf \-Nombre\-::addition} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Nombre} \&}]{nb}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classNombre_ad40df43089fcb34d072b4e955a0eb4fe}
+
+
+\-Calcule la somme de deux nombres. \-Méthode virtuelle pure héritée depuis la classe \hyperlink{classNombre}{\-Nombre}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-L'autre nombre.\\
+\hline
+\end{DoxyParams}
+\-Calcule la somme de deux nombres. 
+
+\-Implemented in \hyperlink{classRationnel_a0b04b9aa79b75d4a9af8cb8b79f753a7}{\-Rationnel}, \hyperlink{classComplexe_a699074c8d13ed87b68aeb80463ea1379}{\-Complexe}, \hyperlink{classEntier_abbb59e17a481b81158182411a46faf82}{\-Entier}, \hyperlink{classReel_a9bad18cd80469dfb8a16900f699abf2a}{\-Reel}, and \hyperlink{classNonComplexe_a1ed6f047d5c576f03616535e3e92ab39}{\-Non\-Complexe}.
+
+\hypertarget{classNombre_afde037df1a7545dbadb537829e90f970}{\index{\-Nombre@{\-Nombre}!clone@{clone}}
+\index{clone@{clone}!Nombre@{\-Nombre}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-Nombre}$\ast$ {\bf \-Nombre\-::clone} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, pure virtual\mbox{]}}}}\label{classNombre_afde037df1a7545dbadb537829e90f970}
+
+
+\-Crée une nouvelle instance de cette classe. \-Méthode virtuelle pure héritée depuis la classe \hyperlink{classConstante}{\-Constante}. 
+
+\begin{DoxyReturn}{\-Returns}
+\-La nouvelle instance de cette classe.
+\end{DoxyReturn}
+\-Crée une nouvelle instance de cette classe. 
+
+\-Implements \hyperlink{classConstante_a5769ea385161e02bd2d1bcadefc2c510}{\-Constante}.
+
+
+
+\-Implemented in \hyperlink{classNonComplexe_a7f1a3881b59680f3d3a7809c75ab2138}{\-Non\-Complexe}, \hyperlink{classRationnel_a422ec3e0c4465d08c4e9deceda6c442c}{\-Rationnel}, \hyperlink{classComplexe_a7a7a8d883e959fd7d5f84d5b2b7b2a9e}{\-Complexe}, \hyperlink{classEntier_aca1eef6372c8d74274bffd435888ef57}{\-Entier}, and \hyperlink{classReel_ab53c7d10a93c702bd7ccde897fc396df}{\-Reel}.
+
+\hypertarget{classNombre_a14b257b875fd98a9d53cf275464957e5}{\index{\-Nombre@{\-Nombre}!cube@{cube}}
+\index{cube@{cube}!Nombre@{\-Nombre}}
+\subsubsection[{cube}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre} \& {\bf \-Nombre\-::cube} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classNombre_a14b257b875fd98a9d53cf275464957e5}
+
+
+\-Calcule le cube d'un nombre. \-Méthode virtuelle. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Le cube d'un nombre.
+\end{DoxyReturn}
+\-Calcule le cube d'un nombre. 
+
+\-Reimplemented in \hyperlink{classComplexe_a1f1f8bb3f3c98b55ed934b0c8695bf2f}{\-Complexe}.
+
+\hypertarget{classNombre_ae4e773caee4bb349cdbe7155e26290d6}{\index{\-Nombre@{\-Nombre}!division@{division}}
+\index{division@{division}!Nombre@{\-Nombre}}
+\subsubsection[{division}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-Nombre}\& {\bf \-Nombre\-::division} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Nombre} \&}]{nb}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classNombre_ae4e773caee4bb349cdbe7155e26290d6}
+
+
+\-Calcule la division de deux nombres. \-Méthode virtuelle pure héritée depuis la classe \hyperlink{classNombre}{\-Nombre}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-L'autre nombre.\\
+\hline
+\end{DoxyParams}
+\-Calcule la division de deux nombres. 
+
+\-Implemented in \hyperlink{classRationnel_a7797b234a41853c34db9a7bae8b77538}{\-Rationnel}, \hyperlink{classComplexe_aad8b6ff92139b04c7357a0e566926a20}{\-Complexe}, \hyperlink{classReel_a041d68cd7ee92fe30178ef1270d4628b}{\-Reel}, \hyperlink{classEntier_a968f1bd92ad6fc703aa3160921d905f7}{\-Entier}, and \hyperlink{classNonComplexe_a1af698f4c7d50e69f2c7dfa3e7998cdd}{\-Non\-Complexe}.
+
+\hypertarget{classNombre_a742022c5e875fe24046d1c28cf043b42}{\index{\-Nombre@{\-Nombre}!multiplication@{multiplication}}
+\index{multiplication@{multiplication}!Nombre@{\-Nombre}}
+\subsubsection[{multiplication}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-Nombre}\& {\bf \-Nombre\-::multiplication} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Nombre} \&}]{nb}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classNombre_a742022c5e875fe24046d1c28cf043b42}
+
+
+\-Calcule la multiplication de deux nombres. \-Méthode virtuelle pure héritée depuis la classe \hyperlink{classNombre}{\-Nombre}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-L'autre nombre.\\
+\hline
+\end{DoxyParams}
+\-Calcule la multiplication de deux nombres. 
+
+\-Implemented in \hyperlink{classRationnel_a08cda12f3d5f7ed92a4a133ad2cf0b31}{\-Rationnel}, \hyperlink{classComplexe_a1137e6bfa881a8523463adf6f1f15a36}{\-Complexe}, \hyperlink{classReel_a5bdfb76995bdea709a971fa2d134de46}{\-Reel}, \hyperlink{classEntier_a4e51200ae8e5e704ecb349d2d69f0dbf}{\-Entier}, and \hyperlink{classNonComplexe_a7343c4742a895813a4b031fb67170dc8}{\-Non\-Complexe}.
+
+\hypertarget{classNombre_a8d0fa5c9724a72a81dfb5a50f8698bad}{\index{\-Nombre@{\-Nombre}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Nombre@{\-Nombre}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre} \& \-Nombre\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Nombre} \&}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classNombre_a8d0fa5c9724a72a81dfb5a50f8698bad}
+
+
+\-Calcule la multiplication de deux nombres. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-L'autre nombre. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-La multiplication de deux nombres.
+\end{DoxyReturn}
+\-Calcule la multiplication de deux nombres. \hypertarget{classNombre_a3e5a5aca1c59ff671feab5639ffed9b0}{\index{\-Nombre@{\-Nombre}!operator+@{operator+}}
+\index{operator+@{operator+}!Nombre@{\-Nombre}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre} \& \-Nombre\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Nombre} \&}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classNombre_a3e5a5aca1c59ff671feab5639ffed9b0}
+
+
+\-Calcule la somme de deux nombres. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-L'autre nombre. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-La somme de deux nombres.
+\end{DoxyReturn}
+\-Calcule la somme de deux nombres. \hypertarget{classNombre_a4d78f1887b4896ac59cbc66bdd919644}{\index{\-Nombre@{\-Nombre}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Nombre@{\-Nombre}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre} \& \-Nombre\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Nombre} \&}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classNombre_a4d78f1887b4896ac59cbc66bdd919644}
+
+
+\-Calcule la soustraction de deux nombres. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-L'autre nombre. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-La soustraction de deux nombres.
+\end{DoxyReturn}
+\-Calcule la soustraction de deux nombres. \hypertarget{classNombre_a0d46caf2a005dceb4f643a5d167d79a9}{\index{\-Nombre@{\-Nombre}!operator/@{operator/}}
+\index{operator/@{operator/}!Nombre@{\-Nombre}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre} \& \-Nombre\-::operator/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Nombre} \&}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classNombre_a0d46caf2a005dceb4f643a5d167d79a9}
+
+
+\-Calcule la division de deux nombres. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-L'autre nombre. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-La division de deux nombres.
+\end{DoxyReturn}
+\-Calcule la division de deux nombres. \hypertarget{classNombre_a3fb106bcd953c9d3e03609bf1d49f2e7}{\index{\-Nombre@{\-Nombre}!sign@{sign}}
+\index{sign@{sign}!Nombre@{\-Nombre}}
+\subsubsection[{sign}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre} \& {\bf \-Nombre\-::sign} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classNombre_a3fb106bcd953c9d3e03609bf1d49f2e7}
+
+
+\-Calcule l'opposée d'un nombre. \-Méthode virtuelle. 
+
+\begin{DoxyReturn}{\-Returns}
+\-L'opposée d'un nombre.
+\end{DoxyReturn}
+\-Calcule l'opposée d'un nombre. 
+
+\-Reimplemented in \hyperlink{classComplexe_ae22fa4e15e4d048c6094ae266b6a750e}{\-Complexe}.
+
+\hypertarget{classNombre_aae525a90cd3ddeda1ce8349a23634e75}{\index{\-Nombre@{\-Nombre}!soustraction@{soustraction}}
+\index{soustraction@{soustraction}!Nombre@{\-Nombre}}
+\subsubsection[{soustraction}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-Nombre}\& {\bf \-Nombre\-::soustraction} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Nombre} \&}]{nb}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classNombre_aae525a90cd3ddeda1ce8349a23634e75}
+
+
+\-Calcule la soustraction de deux nombres. \-Méthode virtuelle pure héritée depuis la classe \hyperlink{classNombre}{\-Nombre}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-L'autre nombre.\\
+\hline
+\end{DoxyParams}
+\-Calcule la soustraction de deux nombres. 
+
+\-Implemented in \hyperlink{classRationnel_a568a44d3bb7c39ec7096a939ce067f8f}{\-Rationnel}, \hyperlink{classComplexe_a54ecc525a7dc0e6491cd3125010b30bf}{\-Complexe}, \hyperlink{classEntier_aad2b72821451bf5a0445f1cccc8ab1cb}{\-Entier}, \hyperlink{classReel_a5ab824ed0b29698abbe95d0edb671f97}{\-Reel}, and \hyperlink{classNonComplexe_ac7e41f7e2f5422687985a5fe501e243f}{\-Non\-Complexe}.
+
+\hypertarget{classNombre_a43b5ad781c1274196907939a36ecefcf}{\index{\-Nombre@{\-Nombre}!sqr@{sqr}}
+\index{sqr@{sqr}!Nombre@{\-Nombre}}
+\subsubsection[{sqr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Nombre} \& {\bf \-Nombre\-::sqr} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classNombre_a43b5ad781c1274196907939a36ecefcf}
+
+
+\-Calcule le carré d'un nombre. \-Méthode virtuelle. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Le carré d'un nombre.
+\end{DoxyReturn}
+\-Calcule le carré d'un nombre. 
+
+\-Reimplemented in \hyperlink{classComplexe_a4d7ad8bc647f9c3067a0093619f609c0}{\-Complexe}.
+
+\hypertarget{classNombre_a8df232159bfd0e9f7e153cc73c8b128c}{\index{\-Nombre@{\-Nombre}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Nombre@{\-Nombre}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}virtual \-Q\-String {\bf \-Nombre\-::to\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classNombre_a8df232159bfd0e9f7e153cc73c8b128c}
+
+
+\-Retourne une chaine de caractères correspondant aux informations encapsulées par un nombre. \-Méthode virtuelle pure héritée depuis la classe \hyperlink{classConstante}{\-Constante}. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Une chaine de caractères correspondant aux informations encapsulées par un nombre.
+\end{DoxyReturn}
+\-Retourne une chaine de caractères correspondant aux informations encapsulées par un nombre. 
+
+\-Implements \hyperlink{classConstante_ad5ea6850196ee9f86b74c74009a87ab1}{\-Constante}.
+
+
+
+\-Implemented in \hyperlink{classNonComplexe_abae1947a8f9f582f94d5e791ce4624d6}{\-Non\-Complexe}, \hyperlink{classRationnel_a41bc89d21ce161818f67ccfe296766c0}{\-Rationnel}, \hyperlink{classEntier_aa960356dfeae8af6dfa2cd25136a1a6f}{\-Entier}, \hyperlink{classReel_a990e8324822ba3dbc64fc7ff727411e2}{\-Reel}, and \hyperlink{classComplexe_a327fd83ec9743fb43c5d47831d8ed45c}{\-Complexe}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Nombre_8h}{\-Nombre.\-h}\item 
+\-Nombre.\-cpp\end{DoxyCompactItemize}
